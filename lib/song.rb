@@ -31,13 +31,14 @@ song
 end
 
 def self.find_by_name(song_name)
+  #binding.pry
   @@all.find{|song|song.name == song_name}
 end
 
 def self.find_or_create_by_name(song_name)
-    
-  self.find_by_name||self.create_by_name
-@@all.find{|song|song.name == song_name}
+    #binding.pry
+  self.find_by_name(song_name)||self.create_by_name(song_name)
+#@@all.find{|song|song.name == song_name}
   
   end
 
