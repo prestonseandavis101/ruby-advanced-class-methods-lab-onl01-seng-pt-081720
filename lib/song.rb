@@ -51,7 +51,7 @@ def self.new_from_filename(song)
   artist_name = song.split(" - ")[0]
   song_name = song.split(".mp3")[1]
   new_song = Song.new
-  #binding.pry
+  binding.pry
   song.artist_name
   song.name
   
