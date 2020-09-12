@@ -49,7 +49,7 @@ end
 
 def self.new_from_filename(song)
 dash.split
-#binding.pry
+binding.pry
 end
 
 
