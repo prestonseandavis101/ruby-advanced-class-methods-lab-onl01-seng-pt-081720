@@ -48,8 +48,8 @@ self.all.sort_by{|song|song.name}
 end
 
 def self.new_from_filename(song)
-  artist_name = song.split(" - ")[0]
-  song_name = song.split(" - ")[1]
+  artist_name = song.split(" - ")[0] #--> gets rid of the "-", and splits the string into an array with two strings, the [0] collects the firt element of the array, which is ""
+  song_name = song.split(" - ")[1] 
   song_name = song_name.split(".mp3")[0]
   new_song = Song.new
   #binding.pry
