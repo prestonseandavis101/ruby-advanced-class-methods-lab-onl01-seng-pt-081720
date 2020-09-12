@@ -48,8 +48,7 @@ self.all.sort_by{|song|song.name}
 end
 
 def self.new_from_filename(song)
-" - ".split
-binding.pry
+  song.split("-")
 end
 
 
