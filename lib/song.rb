@@ -48,6 +48,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(song_name)
+  song = Song.new
+  song.name = song_name.mp3
 end
 
 def self.create_from_filename
