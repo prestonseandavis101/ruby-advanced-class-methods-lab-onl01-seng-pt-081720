@@ -52,7 +52,6 @@ def self.new_from_filename(song)
   song_name = song.split(" - ")[1] #--> this collects the second element in the string, [1], or, "For Love I Come.mp3" and assigns it to the instance variable song_name
   song_name = song_name.split(".mp3")[0] #---> this splits off ".mp3" from the string and creates an array with one element that you collect with [0]
   new_song = Song.new #--> this creates a new instance of a song
-  binding.pry
 new_song.artist_name = artist_name #---> assigns artist_name to new_song
 new_song.name = song_name #---> assigns song_name to new_song
 new_song #---> returns new_song with both the song_name and artist_name elements inside it.
