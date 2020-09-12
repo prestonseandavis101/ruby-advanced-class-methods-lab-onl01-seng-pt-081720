@@ -49,7 +49,7 @@ end
 
 def self.new_from_filename(song)
   artist_name = song.split(" - ")[0] #--> gets rid of the "-", and splits the string into an array with two strings, the [0] collects the firt element of the array, which is "Thundercat"
-  song_name = song.split(" - ")[1] 
+  song_name = song.split(" - ")[1] #--> this collects the second element in the string, [1], or, "For Love I Come.mp3" and assigns it to the instance variable song_name
   song_name = song_name.split(".mp3")[0]
   new_song = Song.new
   binding.pry
