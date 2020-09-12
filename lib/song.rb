@@ -49,7 +49,7 @@ end
 
 def self.new_from_filename(song)
   song.split("-")
-  collect.do {|elements|
+   song = collect.do {|elements|
   artist_name = data[0]
   song_name = data[1]
   song.split(".mp3")
