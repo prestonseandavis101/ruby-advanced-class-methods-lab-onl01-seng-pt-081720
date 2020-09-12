@@ -42,7 +42,7 @@ def self.find_or_create_by_name(song_name)
   end
 
 def self.alphabetical
-  @@all.sort_by{|song_1, song_2| song_1 <=> song_2}
+  @@all.sort_by do{|song_1, song_2| song_1 <=> song_2}
 #binding.pry
 end
 
