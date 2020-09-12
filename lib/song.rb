@@ -48,9 +48,7 @@ self.all.sort_by{|song|song.name}
 end
 
 def self.new_from_filename(song)
-song = "For Love I Come.mp3"
-artist_name =  "Thundercat"
-artist_name + song
+song = song.name + ".mp3"
 end
 
 def self.create_from_filename
