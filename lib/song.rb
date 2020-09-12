@@ -47,9 +47,9 @@ self.all.sort_by{|song|song.name}
 #binding.pry
 end
 
-def self.new_from_filename()
-song = 
-artist_name = 
+def self.new_from_filename(song)
+song.new = song + ".mp3"
+artist_name = artist_name
 end
 
 def self.create_from_filename
