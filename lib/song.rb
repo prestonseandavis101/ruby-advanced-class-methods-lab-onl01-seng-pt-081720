@@ -60,7 +60,7 @@ end
 
 
 def self.create_from_filename(song)
-  artist_name = 
+   artist_name = song.split(" - ")[0]
   
 end
 
