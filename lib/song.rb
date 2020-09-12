@@ -49,7 +49,7 @@ end
 
 def self.new_from_filename(song)
 song.new = song + ".mp3"
-artist_name - song + "mp3"
+artist_name - song + ".mp3"
 end
 
 def self.create_from_filename
