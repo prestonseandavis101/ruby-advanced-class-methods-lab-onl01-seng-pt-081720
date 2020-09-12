@@ -48,12 +48,12 @@ self.all.sort_by{|song|song.name}
 end
 
 def self.new_from_filename()
-
+song = 
+artist_name = 
 end
 
 def self.create_from_filename
-  song = 
-  artist_name = 
+  
 end
 
 def self.destroy_all
