@@ -60,6 +60,7 @@ end
 
 
 def self.create_from_filename(song)
+  artist_name = 
   
 end
 
