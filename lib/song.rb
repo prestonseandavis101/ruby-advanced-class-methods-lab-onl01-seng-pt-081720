@@ -66,6 +66,22 @@ end
 
 
 def self.create_from_filename(song)
+  artist_name = song.split(" - ")[0] 
+ 
+  song_name = song.split(" - ")[1]
+ 
+  song_name = song_name.split(".mp3")[0]
+ 
+  new_song = Song.new
+
+new_song.artist_name = artist_name
+
+new_song.name = song_name
+
+new_song.save
+
+new_song
+  
     
 end
 
