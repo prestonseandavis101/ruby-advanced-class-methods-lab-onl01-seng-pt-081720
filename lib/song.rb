@@ -47,7 +47,7 @@ def self.alphabetical
 #binding.pry
 end
 
-def self.new_from_filename
+def self.new_from_filename(song_name.mp3)
 end
 
 def self.create_from_filename
