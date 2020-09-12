@@ -58,9 +58,9 @@ def self.new_from_filename(song)
 
 new_song.artist_name = artist_name #---> assigns artist_name to new_song
 
-new_song.name = song_name #---> assigns song_name to new_song
+new_song.name = song_name 
 
-new_song #---> returns new_song with both the song_name and artist_name elements inside it.
+new_song
   
 end
 
@@ -75,7 +75,6 @@ def self.create_from_filename(song)
     new_song.save
     new_song
     
-end
 end
 
 def self.destroy_all
