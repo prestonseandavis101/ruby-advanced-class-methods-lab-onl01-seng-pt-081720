@@ -50,7 +50,7 @@ end
 def self.new_from_filename(song)
   artist_name = song.split(" - ")[0]
   song_name = song.split(" - ")[1]
-  song_name = song_name.split(" .mp3 ")
+  song_name = song_name.split(".mp3")
   new_song = Song.new
   binding.pry
   song.artist_name
