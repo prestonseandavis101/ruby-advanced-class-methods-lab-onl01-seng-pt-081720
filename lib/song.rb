@@ -8,7 +8,7 @@ class Song
   end
 
   def save
-    self.class.all << self
+    @@all << self
   end
 
 def self.create
@@ -31,19 +31,19 @@ song
 end
 
 def self.find_by_name(song_name)
-  #binding.pry
+  
   @@all.find{|song|song.name == song_name}
 end
 
 def self.find_or_create_by_name(song_name)
-    #binding.pry
+  
   self.find_by_name(song_name)||self.create_by_name(song_name)
-#@@all.find{|song|song.name == song_name}
   
   end
 
 def self.alphabetical
-
+  @@all.sort_by{|song_1, song_2| song_1 <=> song_2}
+#binding.pry
 end
 
 def self.new_from_filename
@@ -53,6 +53,7 @@ def self.create_from_filename
 end
 
 def self.destroy_all
+  
 end
 
 end
